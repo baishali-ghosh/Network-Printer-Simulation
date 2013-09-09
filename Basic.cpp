@@ -34,7 +34,6 @@ class emp
 	    cout<<completiontime<<"\t\t";
 	    cout<<waitingtime<<"\t";
 	    cout<<endl<<endl;
-	   
 	 }
 	 int getplevel()
 	 {
@@ -51,7 +50,6 @@ class emp
 };
 class queue
 {
-	
 	int front;
 	static int i; 
 	emp epq[NOEMP];
@@ -65,26 +63,24 @@ class queue
 		}
 	 void setvalues(int m, int n)
 	 {
-		   for(q=0;q<NOEMP;q++)
-		   
-		   /*{
+	       for(q=0;q<NOEMP;q++)
+	       {
 			    e[i].empid = i+1;
 			    e[i].nop=(rand()%n)+1; //To generate random nos from L to U (rand()%U)+L
 			    e[i].plevel=(rand()%4)+1;
 			    e[i].arrtime=(rand()%m)+1;
 			    e[i].display();
 			    i++;
-	       }*/
+	       }
 	       //To provide input manually
-	       
-	       for(q=0;q<NOEMP;q++)
+	      /* for(q=0;q<NOEMP;q++)
 		   {
 			    e[i].empid=i+1;
 			    cin>>e[i].nop; //To generate random nos from L to U (rand()%U)+L
 			    cin>>e[i].plevel;
 			    cin>>e[i].arrtime;
 			    i++;
-		   }	   
+		   }*/	   
 	  }
     //PROCESSING OF PRINT REQUESTS
 	void process()
@@ -235,7 +231,6 @@ class queue
 				 epq[k] = temp ;
 			  }
 		//rearrange no. of pages
-	
 		 for(j=c;j<=s;j++)
 		 {
 	          for(k=j+1;k<=s;k++)
