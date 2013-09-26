@@ -5,7 +5,9 @@ using namespace std;
 #include<string>
 #define NOEMP 10
 #include<time.h>
+//global variables
 int flag=1, pfl=1;
+//class to hold details of employees
 class emp
 {    public:
 	 int empid;
@@ -15,11 +17,13 @@ class emp
 	 int completiontime;
 	 int waitingtime;
 	 public:
+	 //default constructor
 	 emp()
 	 {
 		 completiontime=0;
 		 waitingtime=0;
-	}
+	 }
+	 //display employee details
 	 void display()
 	 { 
 	    if(flag)
@@ -45,7 +49,7 @@ class emp
 	 }
 	 int getarrtime()
 	 {
-		  return arrtime;
+		 return arrtime;
 	 }		
 };
 class queue
@@ -118,7 +122,7 @@ class queue
 			  }
 		   }
 	    } 
-	    //sort by priority klevel
+	    //sort by priority level
 	    for (k =front;k<=rear;k++)
 	    {
 		   for (j=k+1;j<=rear;j++)
